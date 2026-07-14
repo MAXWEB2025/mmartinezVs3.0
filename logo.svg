@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <!-- Outer triangle -->
+  <polygon points="80,8 152,148 8,148" fill="none" stroke="#00aaff" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Inner triangle -->
+  <polygon points="80,34 126,118 34,118" fill="rgba(0,170,255,0.08)" stroke="#00aaff" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Letter A crossbar -->
+  <line x1="54" y1="100" x2="106" y2="100" stroke="#00aaff" stroke-width="4" stroke-linecap="round"/>
+  <!-- Letter A left leg -->
+  <line x1="80" y1="44" x2="44" y2="118" stroke="#00aaff" stroke-width="4" stroke-linecap="round"/>
+  <!-- Letter A right leg -->
+  <line x1="80" y1="44" x2="116" y2="118" stroke="#00aaff" stroke-width="4" stroke-linecap="round"/>
+</svg>
