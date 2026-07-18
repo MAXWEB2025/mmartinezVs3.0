@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
 Sitemap: https://www.mmartinezsolutionit.com.ar/sitemap.xml
