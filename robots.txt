@@ -1,5 +1,18 @@
-User-agent: *
+# robots.txt - MMartinez Solution IT
+# https://www.mmartinezsolutionit.com.ar/
 
+User-agent: *
 Allow: /
 
+# Bloquear crawlers de IA que se aprovechan del contenido (opcional)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Ubicación del sitemap
 Sitemap: https://www.mmartinezsolutionit.com.ar/sitemap.xml
