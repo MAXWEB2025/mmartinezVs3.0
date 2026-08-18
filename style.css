@@ -981,3 +981,540 @@ img { display: block; max-width: 100%; }
 .project-stat {display:none;}
 .project-image{height: 100px; overflow: hidden;}
 
+/********combos**************************/
+/* =========================================================
+   COMBOS / PRICING
+   Metodología BEM
+   ========================================================= */
+
+   .pricing-section {
+    position: relative;
+    padding: 70px 0;
+    overflow: hidden;
+  }
+  
+  .pricing-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(59, 130, 246, 0.06);
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+  }
+  
+  .pricing-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pricing-section__intro {
+    max-width: 680px;
+    margin: 16px auto 0;
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  
+  .combos__head .section-eyebrow,
+.combos__head .section-title,
+.combos__description {
+  text-align: center;
+}
+  /* ---------- Grid ---------- */
+  
+  .pricing-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 42px;
+  }
+  
+  
+  /* ---------- Card ---------- */
+  
+  .pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    background: rgba(13, 26, 53, 0.55);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 30px 24px 24px;
+    overflow: hidden;
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      background 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-hover);
+    background: rgba(13, 26, 53, 0.78);
+    box-shadow: 0 18px 50px rgba(59, 130, 246, 0.14);
+  }
+  
+  
+  /* ---------- Card destacada ---------- */
+  
+  .pricing-card--featured {
+    border-color: rgba(59, 130, 246, 0.65);
+    background:
+      linear-gradient(
+        180deg,
+        rgba(30, 58, 138, 0.25) 0%,
+        rgba(13, 26, 53, 0.65) 45%,
+        rgba(13, 26, 53, 0.55) 100%
+      );
+    box-shadow:
+      0 18px 60px rgba(59, 130, 246, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+  
+  .pricing-card--featured:hover {
+    border-color: var(--blue-400);
+    box-shadow:
+      0 22px 65px rgba(59, 130, 246, 0.22),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  
+  
+  /* ---------- Badge Más elegido ---------- */
+  
+  .pricing-card__popular {
+    position: absolute;
+    margin-top: 5px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -1px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 145px;
+    padding: 7px 16px;
+    background: var(--grad-blue);
+    color: var(--white);
+    border-radius: 0 0 10px 10px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    box-shadow: 0 7px 20px rgba(59, 130, 246, 0.3);
+  }
+  
+  
+  /* ---------- Header de la card ---------- */
+  
+  .pricing-card__header {
+    padding-top: 4px;
+   
+  }
+  
+  .pricing-card--featured .pricing-card__header {
+    padding-top: 32px;
+  }
+  
+  
+  /* ---------- Icono ---------- */
+  
+  .pricing-card__icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid var(--border);
+    color: var(--blue-400);
+    font-size: 21px;
+  }
+  
+  
+  /* ---------- Eyebrow ---------- */
+  
+  .pricing-card__eyebrow {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--blue-400);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+  
+  
+  /* ---------- Título ---------- */
+  
+  .pricing-card__title {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+   
+  }
+  
+  
+  /* ---------- Descripción ---------- */
+  
+  .pricing-card__description {
+    min-height: 76px;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+    
+  }
+  
+  
+  /* ---------- Precio ---------- */
+  
+  .pricing-card__price {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 24px 0;
+    padding: 18px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .pricing-card__price-label {
+    color: var(--text-dim);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  
+  .pricing-card__price-value {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  
+  /* ---------- Cuerpo ---------- */
+  
+  .pricing-card__body {
+    flex: 1;
+  }
+  
+  .pricing-card__features-title {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* ---------- Lista de características ---------- */
+  
+  .pricing-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  
+  .pricing-card__features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  
+  .pricing-card__features li i {
+    flex-shrink: 0;
+    width: 17px;
+    margin-top: 3px;
+    color: var(--blue-400);
+    font-size: 11px;
+  }
+  
+  
+  /* ---------- Avisos de inversión publicitaria ---------- */
+  
+  .pricing-card__notices {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .pricing-card__notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 11px 12px;
+    border: 1px solid rgba(59, 130, 246, 0.16);
+    border-radius: var(--radius-sm);
+    background: rgba(59, 130, 246, 0.06);
+    color: var(--text-muted);
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  
+  .pricing-card__notice i {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--blue-400);
+  }
+  
+  
+  /* ---------- Footer de card ---------- */
+  
+  .pricing-card__footer {
+    margin-top: 28px;
+  }
+  
+  
+  /* ---------- Botones ---------- */
+  
+  .pricing-card__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    transition:
+      transform 0.25s ease,
+      background 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  
+  .pricing-card__button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .pricing-card__button--outline {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+  }
+  
+  .pricing-card__button--outline:hover {
+    color: var(--white);
+    background: rgba(59, 130, 246, 0.10);
+    border-color: var(--border-hover);
+  }
+  
+  .pricing-card__button--primary {
+    color: var(--white);
+    background: var(--grad-blue);
+    border: 1px solid rgba(96, 165, 250, 0.5);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.28);
+  }
+  
+  .pricing-card__button--primary:hover {
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
+  }
+  
+  
+  /* ---------- Nota general ---------- */
+  
+  .pricing-section__note {
+    max-width: 850px;
+    margin: 26px auto 0;
+    color: var(--text-dim);
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  
+  /* =========================================================
+     ACCESIBILIDAD
+     ========================================================= */
+  
+  .pricing-card__button:focus-visible {
+    outline: 3px solid var(--blue-300);
+    outline-offset: 3px;
+  }
+  
+  
+  /* =========================================================
+     RESPONSIVE - TABLET
+     ========================================================= */
+  
+  @media (max-width: 1024px) {
+  
+    .pricing-section {
+      padding: 60px 0;
+    }
+  
+    .pricing-section__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+  
+    .pricing-card--featured {
+      grid-column: 1 / -1;
+      max-width: 560px;
+      width: 100%;
+      justify-self: center;
+    }
+  
+    .pricing-card--featured .pricing-card__description {
+      min-height: auto;
+      text-align: center;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     RESPONSIVE - TABLET PEQUEÑA
+     ========================================================= */
+  
+  @media (max-width: 768px) {
+  
+    .pricing-section {
+      padding: 55px 0;
+    }
+  
+    .pricing-section__intro {
+      font-size: 14px;
+    }
+  
+    .pricing-section__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+  
+    .pricing-card,
+    .pricing-card--featured {
+      grid-column: auto;
+      max-width: none;
+      width: 100%;
+    }
+  
+    .pricing-card__description {
+      min-height: auto;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     RESPONSIVE - MOBILE
+     ========================================================= */
+  
+  @media (max-width: 480px) {
+  
+    .pricing-section {
+      padding: 50px 0;
+    }
+  
+    .pricing-section__intro {
+      font-size: 13px;
+      line-height: 1.65;
+    }
+  
+    .pricing-section__grid {
+      margin-top: 28px;
+      gap: 14px;
+    }
+  
+    .pricing-card {
+      padding: 26px 20px 20px;
+      border-radius: var(--radius);
+    }
+  
+    .pricing-card--featured .pricing-card__header {
+      padding-top: 30px;
+    }
+  
+    .pricing-card__icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 16px;
+      font-size: 19px;
+    }
+  
+    .pricing-card__title {
+      font-size: 22px;
+    }
+  
+    .pricing-card__description {
+      font-size: 13px;
+    }
+  
+    .pricing-card__price {
+      margin: 20px 0;
+      padding: 16px 0;
+    }
+  
+    .pricing-card__price-value {
+      font-size: 25px;
+    }
+  
+    .pricing-card__features {
+      gap: 10px;
+    }
+  
+    .pricing-card__features li {
+      font-size: 12.5px;
+    }
+  
+    .pricing-card__button {
+      min-height: 50px;
+      font-size: 13px;
+    }
+  
+    .pricing-section__note {
+      padding: 0 8px;
+      font-size: 10.5px;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     RESPONSIVE - 320px
+     ========================================================= */
+  
+  @media (max-width: 320px) {
+  
+    .pricing-card {
+      padding: 24px 16px 18px;
+    }
+  
+    .pricing-card__title {
+      font-size: 20px;
+    }
+  
+    .pricing-card__description {
+      font-size: 12px;
+    }
+  
+    .pricing-card__features li {
+      font-size: 12px;
+    }
+  
+    .pricing-card__popular {
+      min-width: 132px;
+      padding: 6px 12px;
+      font-size: 10px;
+    }
+  
+  }
