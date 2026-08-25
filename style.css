@@ -18,7 +18,7 @@
   --font:      'Inter', sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth;overflow-x: hidden; }
 
 body {
   font-family: var(--font);
@@ -55,7 +55,7 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 22px;
+  padding: 12px 5px;
   border-radius: 6px;
   font-size: 13px;
   font-weight: 700;
@@ -194,6 +194,7 @@ img { display: block; max-width: 100%; }
   font-weight: 800;
   line-height: 1.25;
   color: #fff;
+  padding-right: 27px;
 }
 .hero-title .highlight { color: var(--blue); }
 .hero-sub {
@@ -201,6 +202,7 @@ img { display: block; max-width: 100%; }
   color: var(--text-dim);
   line-height: 1.6;
   max-width: 420px;
+  padding-right: 25px;
 }
 .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-stats-row {
@@ -904,11 +906,13 @@ img { display: block; max-width: 100%; }
   .testimonios-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .project-card { min-width: calc(33.33% - 11px); }
+  
 }
 
 @media (max-width: 900px) {
   .proceso-cta-grid { grid-template-columns: 1fr; }
   .hero-stats-row { grid-template-columns: repeat(2, 1fr); }
+  
 }
 
 @media (max-width: 768px) {
@@ -940,6 +944,8 @@ img { display: block; max-width: 100%; }
   .project-card { min-width: calc(80vw - 32px); }
   .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
   .footer { padding-bottom: 90px; }
+  
+
 }
 
 @media (max-width: 480px) {
@@ -957,6 +963,7 @@ img { display: block; max-width: 100%; }
   .orb-brand-sub  { font-size: 7px; }
   .orb-feat { font-size: 8px; }
   .orb-feat small { font-size: 7px; }
+ 
 } 
 @media (max-width: 320px) {
   .hero-buttons { flex-direction: column; }
@@ -977,6 +984,7 @@ img { display: block; max-width: 100%; }
     align-items: center;
     margin: 6px 10px 10px;
     text-align: center;}
+   
 }
 .project-stat {display:none;}
 .project-image{height: 100px; overflow: hidden;}
@@ -1377,7 +1385,7 @@ img { display: block; max-width: 100%; }
       min-height: auto;
       text-align: center;
     }
-  
+ 
   }
   
   
@@ -1411,6 +1419,7 @@ img { display: block; max-width: 100%; }
     .pricing-card__description {
       min-height: auto;
     }
+  
   
   }
   
@@ -1486,6 +1495,8 @@ img { display: block; max-width: 100%; }
       font-size: 10.5px;
     }
   
+   
+     
   }
   
   
@@ -1516,5 +1527,21 @@ img { display: block; max-width: 100%; }
       padding: 6px 12px;
       font-size: 10px;
     }
-  
   }
+/* =========================================================
+   ENLACE INTERNO SEO
+   ========================================================= */
+
+   .device__base__diseño-web1  {
+    padding-top: 25px;
+}
+
+.device__base__diseño-web1 a {
+    color: white;
+    font-weight: 700;
+}
+
+.device__base__diseño-web1 a :hover {
+    color: rgba(4, 80, 123, 0.927);
+    text-decoration: underline;
+}
