@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Google Ads en Ezeiza | Publicidad en Google para negocios</title>
+
+  <meta
+    name="description"
+    content="Campañas de Google Ads en Ezeiza para negocios y profesionales. Publicidad local, segmentación geográfica y optimización para generar consultas y clientes.">
+  
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://www.mmartinezsolutionit.com.ar/google-ads-ezeiza.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img-principal/logo-web.webp" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- PLANTILLA MADRE -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS específico de esta página -->
+  <style>
+
+    /* =========================================================
+       GOOGLE ADS EZEIZA
+       CSS ESPECÍFICO DE LA PÁGINA
+       ========================================================= */
+
+    .ads-page {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .ads-hero {
+      padding: 80px 0 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ads-hero::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(
+        circle,
+        rgba(0,170,255,0.10) 0%,
+        rgba(0,170,255,0.03) 45%,
+        transparent 72%
+      );
+      pointer-events: none;
+    }
+
+    .ads-hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .ads-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .ads-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid rgba(0,170,255,0.35);
+      border-radius: 6px;
+      color: var(--blue);
+      background: rgba(0,170,255,0.05);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .ads-eyebrow i {
+      font-size: 11px;
+    }
+
+    .ads-hero-title {
+      font-size: clamp(34px, 4.2vw, 58px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -1.8px;
+      color: #fff;
+      margin-bottom: 22px;
+      max-width: 720px;
+    }
+
+    .ads-hero-title span {
+      color: var(--blue);
+    }
+
+    .ads-hero-text {
+      max-width: 600px;
+      color: var(--text-dim);
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    .ads-hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .ads-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--text-dim);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .ads-trust span {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .ads-trust i {
+      color: var(--blue);
+    }
+
+    /* ---------- HERO VISUAL ---------- */
+
+    .ads-visual {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ads-dashboard {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(4,15,32,0.92);
+      border: 1px solid rgba(0,170,255,0.22);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow:
+        0 25px 80px rgba(0,0,0,0.35),
+        0 0 50px rgba(0,170,255,0.08);
+      backdrop-filter: blur(14px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .ads-dashboard-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      margin-bottom: 18px;
+    }
+
+    .ads-dashboard-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .ads-google-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,170,255,0.10);
+      border: 1px solid rgba(0,170,255,0.20);
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .ads-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 9px;
+      font-weight: 700;
+      color: #7ee2a8;
+    }
+
+    .ads-status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #25d366;
+      box-shadow: 0 0 8px rgba(37,211,102,0.6);
+    }
+
+    .ads-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .ads-metric {
+      padding: 15px;
+      border-radius: 10px;
+      background: rgba(0,170,255,0.045);
+      border: 1px solid rgba(0,170,255,0.10);
+    }
+
+    .ads-metric-label {
+      display: block;
+      color: var(--text-dim);
+      font-size: 9px;
+      margin-bottom: 7px;
+    }
+
+    .ads-metric-value {
+      display: block;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .ads-metric-value.blue {
+      color: var(--blue);
+    }
+
+    .ads-chart {
+      height: 130px;
+      border-radius: 10px;
+      background:
+        linear-gradient(
+          rgba(255,255,255,0.035) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.035) 1px,
+          transparent 1px
+        );
+      background-size: 30px 30px;
+      border: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ads-chart-line {
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 20px;
+      height: 80px;
+      border-bottom: 2px solid var(--blue);
+      transform: skewY(-10deg);
+      opacity: 0.8;
+      filter: drop-shadow(0 0 5px rgba(0,170,255,0.5));
+    }
+
+    .ads-chart-label {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      color: var(--text-dim);
+      font-size: 9px;
+    }
+
+    .ads-floating-card {
+      position: absolute;
+      right: -15px;
+      bottom: 20px;
+      z-index: 3;
+      width: 180px;
+      padding: 15px;
+      border-radius: 12px;
+      background: rgba(4,15,32,0.96);
+      border: 1px solid rgba(0,170,255,0.25);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    }
+
+    .ads-floating-card small {
+      display: block;
+      color: var(--text-dim);
+      font-size: 9px;
+      margin-bottom: 5px;
+    }
+
+    .ads-floating-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .ads-floating-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--text-dim);
+      font-size: 8px;
+    }
+
+    /* ---------- SECCIONES ---------- */
+
+    .ads-section {
+      padding: 75px 0;
+      position: relative;
+    }
+
+    .ads-section-header {
+      max-width: 720px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .ads-section-label {
+      display: block;
+      color: var(--blue);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .ads-section-title {
+      color: #fff;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .ads-section-description {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* ---------- PROBLEMA ---------- */
+
+    .ads-problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .ads-info-card {
+      padding: 25px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: rgba(4,15,32,0.72);
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .ads-info-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0,170,255,0.35);
+    }
+
+    .ads-info-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: rgba(0,170,255,0.09);
+      border: 1px solid rgba(0,170,255,0.16);
+      color: var(--blue);
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    .ads-info-card h3 {
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 9px;
+    }
+
+    .ads-info-card p {
+      color: var(--text-dim);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    /* ---------- SERVICIO ---------- */
+
+    .ads-service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .ads-service-card {
+      padding: 27px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: rgba(4,15,32,0.72);
+    }
+
+    .ads-service-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .ads-service-card h3 i {
+      color: var(--blue);
+      font-size: 15px;
+    }
+
+    .ads-service-card p {
+      color: var(--text-dim);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    /* ---------- ESTRATEGIA LOCAL ---------- */
+
+    .ads-local {
+      background: rgba(0,170,255,0.025);
+      border-top: 1px solid rgba(0,170,255,0.08);
+      border-bottom: 1px solid rgba(0,170,255,0.08);
+    }
+
+    .ads-local-box {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .ads-local-content h2 {
+      color: #fff;
+      font-size: clamp(26px, 3vw, 38px);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .ads-local-content h2 span {
+      color: var(--blue);
+    }
+
+    .ads-local-content p {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.75;
+      margin-bottom: 18px;
+    }
+
+    .ads-local-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .ads-local-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .ads-local-list i {
+      color: var(--blue);
+      margin-top: 3px;
+    }
+
+    .ads-radius {
+      min-height: 330px;
+      border-radius: 16px;
+      border: 1px solid rgba(0,170,255,0.18);
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(0,170,255,0.10) 0%,
+          rgba(0,170,255,0.04) 35%,
+          transparent 65%
+        ),
+        rgba(4,15,32,0.75);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .ads-radius-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(0,170,255,0.25);
+    }
+
+    .ads-radius-circle.one {
+      width: 110px;
+      height: 110px;
+    }
+
+    .ads-radius-circle.two {
+      width: 210px;
+      height: 210px;
+    }
+
+    .ads-radius-circle.three {
+      width: 310px;
+      height: 310px;
+    }
+
+    .ads-radius-center {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0,170,255,0.55);
+      z-index: 2;
+    }
+
+    .ads-radius-label {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 10px;
+      letter-spacing: 0.7px;
+    }
+
+    /* ---------- PROCESO ---------- */
+
+    .ads-process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .ads-process-card {
+      padding: 24px 18px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: rgba(4,15,32,0.7);
+      text-align: center;
+      position: relative;
+    }
+
+    .ads-process-number {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 15px;
+      background: rgba(0,170,255,0.12);
+      border: 1px solid rgba(0,170,255,0.25);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .ads-process-card h3 {
+      color: #fff;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .ads-process-card p {
+      color: var(--text-dim);
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    /* ---------- COMBINACIÓN ---------- */
+
+    .ads-links-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .ads-link-card {
+      display: block;
+      padding: 24px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: rgba(4,15,32,0.72);
+      transition: transform 0.25s, border-color 0.25s, background 0.25s;
+    }
+
+    .ads-link-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+      background: rgba(0,170,255,0.06);
+    }
+
+    .ads-link-card i {
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .ads-link-card h3 {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .ads-link-card p {
+      color: var(--text-dim);
+      font-size: 11px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .ads-link-more {
+      color: var(--blue);
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    /* ---------- FAQ ---------- */
+
+    .ads-faq {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .ads-faq details {
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      background: rgba(4,15,32,0.72);
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .ads-faq summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      position: relative;
+      padding-right: 45px;
+    }
+
+    .ads-faq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .ads-faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .ads-faq details[open] summary::after {
+      content: "−";
+    }
+
+    .ads-faq-answer {
+      padding: 0 20px 18px;
+      color: var(--text-dim);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    /* ---------- CTA ---------- */
+
+    .ads-final-cta {
+      padding: 75px 0 90px;
+    }
+
+    .ads-cta-box {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 55px 30px;
+      border-radius: 16px;
+      border: 1px solid rgba(0,170,255,0.25);
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(0,170,255,0.09),
+          transparent 65%
+        ),
+        rgba(4,15,32,0.82);
+    }
+
+    .ads-cta-box h2 {
+      color: #fff;
+      font-size: clamp(27px, 3vw, 40px);
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .ads-cta-box h2 span {
+      color: var(--blue);
+    }
+
+    .ads-cta-box p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .ads-cta-note {
+      display: block;
+      margin-top: 13px;
+      color: var(--text-dim);
+      font-size: 10px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+
+    @media (max-width: 1000px) {
+
+      .ads-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .ads-hero-content {
+        text-align: center;
+      }
+
+      .ads-eyebrow {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ads-hero-text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .ads-hero-buttons {
+        justify-content: center;
+      }
+
+      .ads-trust {
+        justify-content: center;
+      }
+
+      .ads-visual {
+        min-height: 360px;
+      }
+
+      .ads-dashboard {
+        max-width: 520px;
+      }
+
+      .ads-local-box {
+        grid-template-columns: 1fr;
+      }
+
+      .ads-local-content {
+        text-align: center;
+      }
+
+      .ads-local-list {
+        max-width: 520px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .ads-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .ads-hero {
+        padding: 55px 0 50px;
+      }
+
+      .ads-hero-title {
+        font-size: clamp(30px, 8vw, 43px);
+        letter-spacing: -1px;
+      }
+
+      .ads-hero-text {
+        font-size: 14px;
+      }
+
+      .ads-visual {
+        min-height: 320px;
+      }
+
+      .ads-floating-card {
+        right: 0;
+        bottom: 5px;
+      }
+
+      .ads-section {
+        padding: 55px 0;
+      }
+
+      .ads-problem-grid,
+      .ads-links-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ads-service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ads-process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .ads-radius {
+        min-height: 290px;
+      }
+
+      .ads-radius-circle.three {
+        width: 270px;
+        height: 270px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .ads-hero {
+        padding: 45px 0 40px;
+      }
+
+      .ads-hero-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .ads-hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .ads-trust {
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+      }
+
+      .ads-visual {
+        min-height: 290px;
+      }
+
+      .ads-dashboard {
+        padding: 14px;
+        border-radius: 12px;
+      }
+
+      .ads-metric {
+        padding: 12px;
+      }
+
+      .ads-metric-value {
+        font-size: 18px;
+      }
+
+      .ads-floating-card {
+        width: 150px;
+        padding: 12px;
+      }
+
+      .ads-section-title {
+        font-size: 26px;
+      }
+
+      .ads-process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ads-cta-box {
+        padding: 40px 20px;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .ads-info-card,
+      .ads-link-card,
+      .btn {
+        transition: none;
+      }
+
+    }
+
+  </style>
+
+  <!-- =========================================================
+       DATOS ESTRUCTURADOS
+       ========================================================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Google Ads en Ezeiza",
+    "description": "Servicio de campañas de Google Ads y publicidad online para negocios y profesionales de Ezeiza.",
+    "url": "https://www.mmartinezsolutionit.com.ar/google-ads-ezeiza.html",
+    "inLanguage": "es-AR",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "MMartinez Solution IT",
+      "url": "https://www.mmartinezsolutionit.com.ar/"
+    },
+    "about": {
+      "@type": "Service",
+      "name": "Google Ads en Ezeiza",
+      "serviceType": "Publicidad en Google Ads",
+      "areaServed": {
+        "@type": "City",
+        "name": "Ezeiza"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "MMartinez Solution IT",
+        "url": "https://www.mmartinezsolutionit.com.ar/"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://www.mmartinezsolutionit.com.ar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Google Ads en Ezeiza",
+        "item": "https://www.mmartinezsolutionit.com.ar/google-ads-ezeiza.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Se puede hacer publicidad en Google solamente en Ezeiza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Las campañas pueden configurarse para orientar la publicidad a una zona geográfica determinada, según los objetivos y la estrategia de cada negocio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Google Ads garantiza conseguir clientes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No existe una garantía de cantidad de clientes. Los resultados dependen de factores como la demanda, competencia, inversión, oferta, anuncios y página de destino. El objetivo es construir y optimizar campañas orientadas a generar consultas relevantes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto hay que invertir en Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La inversión publicitaria depende del mercado, competencia, zona y objetivos del negocio. Se puede definir un presupuesto acorde a las posibilidades del cliente y analizar los resultados para optimizarlo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Google Ads sirve para un negocio local?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Puede ser especialmente útil cuando las personas realizan búsquedas relacionadas con productos o servicios que ofrece un negocio local."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Google Ads y SEO local son lo mismo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Google Ads utiliza publicidad paga para obtener presencia en determinadas búsquedas, mientras que el SEO busca mejorar el posicionamiento orgánico de un sitio web. Ambas estrategias pueden complementarse."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- PARTICULAS -->
+  <canvas id="particles-canvas"></canvas>
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="header-inner">
+
+        <a href="index.html" class="logo" aria-label="MMartinez Solution IT - Inicio">
+
+          <!--
+            REUTILIZÁ ACÁ EXACTAMENTE EL MISMO LOGO
+            QUE YA TENÉS EN LA PLANTILLA MADRE.
+          -->
+
+          <div class="logo-icon">
+            <img
+              src="./img-principal/logo-web.webp"
+              alt="MMartinez Solution IT"
+              width="42"
+              height="42">
+          </div>
+
+          <div class="logo-text">
+            <span class="logo-name">MMARTINEZ</span>
+            <span class="logo-sub">SOLUTION IT</span>
+          </div>
+
+        </a>
+
+
+        <nav class="nav-desktop" aria-label="Navegación principal">
+
+          <a href="index.html" class="nav-link">
+            Inicio
+          </a>
+
+          <a href="diseno-web-ezeiza.html" class="nav-link">
+            Diseño Web
+          </a>
+
+          <a href="landing-page-ezeiza.html" class="nav-link">
+            Landing Pages
+          </a>
+
+          <a href="seo-local-ezeiza.html" class="nav-link">
+            SEO Local
+          </a>
+
+          <a href="google-ads-ezeiza.html" class="nav-link active">
+            Google Ads
+          </a>
+
+        </nav>
+
+
+        <a
+          href="https://wa.me/5491139378426?text=Hola%20MMartinez%20Solution%20IT%2C%20quiero%20consultar%20por%20Google%20Ads%20en%20Ezeiza."
+          class="btn btn-primary header-cta"
+          target="_blank"
+          rel="noopener">
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          Consultar
+
+        </a>
+
+
+        <button
+          class="hamburger"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- MENÚ MOBILE -->
+
+    <nav
+      id="mobile-menu"
+      class="mobile-menu"
+      aria-label="Menú móvil">
+
+      <a href="index.html" class="mobile-nav-link">
+        Inicio
+      </a>
+
+      <a href="diseno-web-ezeiza.html" class="mobile-nav-link">
+        Diseño Web
+      </a>
+
+      <a href="landing-page-ezeiza.html" class="mobile-nav-link">
+        Landing Pages
+      </a>
+
+      <a href="seo-local-ezeiza.html" class="mobile-nav-link">
+        SEO Local
+      </a>
+
+      <a href="google-ads-ezeiza.html" class="mobile-nav-link">
+        Google Ads
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <main class="ads-page">
+
+
+    <!-- =======================================================
+         HERO
+         ======================================================= -->
+
+    <section class="ads-hero">
+
+      <div class="container">
+
+        <div class="ads-hero-grid">
+
+
+          <div
+            class="ads-hero-content"
+            data-aos="fade-right">
+
+            <div class="ads-eyebrow">
+
+              <i class="fa-brands fa-google"></i>
+
+              GOOGLE ADS · EZEIZA
+
+            </div>
+
+
+            <h1 class="ads-hero-title">
+
+              Google Ads en Ezeiza para
+              <span>poner tu negocio frente a tus clientes.</span>
+
+            </h1>
+
+
+            <p class="ads-hero-text">
+
+              Diseñamos campañas de publicidad en Google orientadas
+              a personas que buscan productos o servicios como los
+              que ofrece tu negocio. Segmentación local, anuncios
+              relevantes y optimización para aprovechar mejor tu
+              inversión publicitaria.
+
+            </p>
+
+
+            <div class="ads-hero-buttons">
+
+              <a
+                href="https://wa.me/5491139378426?text=Hola%20MMartinez%20Solution%20IT%2C%20quiero%20consultar%20por%20Google%20Ads%20en%20Ezeiza."
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Quiero consultar
+
+              </a>
+
+
+              <a
+                href="#como-trabajamos"
+                class="btn btn-outline">
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+                Ver cómo trabajamos
+
+              </a>
+
+            </div>
+
+
+            <div class="ads-trust">
+
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Ezeiza y alrededores
+              </span>
+
+              <span>
+                <i class="fa-solid fa-bullseye"></i>
+                Segmentación local
+              </span>
+
+              <span>
+                <i class="fa-solid fa-chart-line"></i>
+                Optimización
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- VISUAL -->
+
+          <div
+            class="ads-visual"
+            data-aos="fade-left">
+
+
+            <div class="ads-dashboard">
+
+              <div class="ads-dashboard-top">
+
+                <div class="ads-dashboard-title">
+
+                  <div class="ads-google-icon">
+
+                    <i class="fa-brands fa-google"></i>
+
+                  </div>
+
+                  Campaña local
+
+                </div>
+
+
+                <div class="ads-status">
+
+                  <span class="ads-status-dot"></span>
+
+                  Campaña activa
+
+                </div>
+
+              </div>
+
+
+              <div class="ads-metric-grid">
+
+                <div class="ads-metric">
+
+                  <span class="ads-metric-label">
+                    Búsquedas relevantes
+                  </span>
+
+                  <span class="ads-metric-value blue">
+                    ↑
+                  </span>
+
+                </div>
+
+
+                <div class="ads-metric">
+
+                  <span class="ads-metric-label">
+                    Zona objetivo
+                  </span>
+
+                  <span class="ads-metric-value">
+                    Local
+                  </span>
+
+                </div>
+
+
+                <div class="ads-metric">
+
+                  <span class="ads-metric-label">
+                    Palabras clave
+                  </span>
+
+                  <span class="ads-metric-value">
+                    +KW
+                  </span>
+
+                </div>
+
+
+                <div class="ads-metric">
+
+                  <span class="ads-metric-label">
+                    Optimización
+                  </span>
+
+                  <span class="ads-metric-value blue">
+                    ✓
+                  </span>
+
+                </div>
+
+              </div>
+
+
+              <div class="ads-chart">
+
+                <span class="ads-chart-label">
+                  Evolución de campaña
+                </span>
+
+                <div class="ads-chart-line"></div>
+
+              </div>
+
+            </div>
+
+
+            <div class="ads-floating-card">
+
+              <small>
+                Objetivo
+              </small>
+
+              <strong>
+                Consultas
+              </strong>
+
+              <span>
+                Tráfico orientado a personas interesadas
+              </span>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         POR QUÉ GOOGLE ADS
+         ======================================================= -->
+
+    <section class="ads-section">
+
+      <div class="container">
+
+        <div class="ads-section-header">
+
+          <span class="ads-section-label">
+            Publicidad con intención
+          </span>
+
+          <h2 class="ads-section-title">
+            No se trata solamente de mostrar anuncios.
+          </h2>
+
+          <p class="ads-section-description">
+
+            La idea es aparecer cuando existe una búsqueda
+            relacionada con lo que tu negocio ofrece y dirigir
+            esa oportunidad hacia una propuesta clara.
+
+          </p>
+
+        </div>
+
+
+        <div class="ads-problem-grid">
+
+
+          <article
+            class="ads-info-card"
+            data-aos="fade-up">
+
+            <div class="ads-info-icon">
+
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <h3>
+              Personas que ya están buscando
+            </h3>
+
+            <p>
+
+              Google permite conectar anuncios con búsquedas
+              relacionadas con productos y servicios. Esto permite
+              trabajar sobre una intención concreta.
+
+            </p>
+
+          </article>
+
+
+
+          <article
+            class="ads-info-card"
+            data-aos="fade-up">
+
+            <div class="ads-info-icon">
+
+              <i class="fa-solid fa-location-crosshairs"></i>
+
+            </div>
+
+            <h3>
+              Enfoque geográfico
+            </h3>
+
+            <p>
+
+              Para un negocio local puede tener sentido concentrar
+              la estrategia en las zonas donde realmente puede
+              atender a sus clientes.
+
+            </p>
+
+          </article>
+
+
+
+          <article
+            class="ads-info-card"
+            data-aos="fade-up">
+
+            <div class="ads-info-icon">
+
+              <i class="fa-solid fa-filter-circle-dollar"></i>
+
+            </div>
+
+            <h3>
+              Cuidar la inversión
+            </h3>
+
+            <p>
+
+              Una campaña necesita seguimiento. Analizamos términos
+              de búsqueda, anuncios y rendimiento para detectar
+              oportunidades de mejora.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         QUÉ HACEMOS
+         ======================================================= -->
+
+    <section class="ads-section" id="servicio">
+
+      <div class="container">
+
+        <div class="ads-section-header">
+
+          <span class="ads-section-label">
+            Gestión de campañas
+          </span>
+
+          <h2 class="ads-section-title">
+            ¿Qué trabajamos en una campaña de Google Ads?
+          </h2>
+
+          <p class="ads-section-description">
+
+            La publicidad funciona mejor cuando cada parte de la
+            campaña responde a un objetivo concreto.
+
+          </p>
+
+        </div>
+
+
+        <div class="ads-service-grid">
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+              Investigación de búsquedas
+
+            </h3>
+
+            <p>
+
+              Analizamos qué términos pueden utilizar los usuarios
+              para encontrar los productos o servicios del negocio
+              y cuáles tienen sentido para la campaña.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-pen-to-square"></i>
+
+              Creación de anuncios
+
+            </h3>
+
+            <p>
+
+              Preparamos mensajes publicitarios alineados con las
+              búsquedas y con la propuesta comercial de cada negocio.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-location-dot"></i>
+
+              Segmentación geográfica
+
+            </h3>
+
+            <p>
+
+              Definimos la zona de orientación de acuerdo con el
+              alcance real del negocio, evitando pagar por tráfico
+              que no resulta útil para el objetivo local.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-ban"></i>
+
+              Palabras clave negativas
+
+            </h3>
+
+            <p>
+
+              Los términos irrelevantes pueden consumir presupuesto.
+              Por eso la revisión de búsquedas puede ayudar a excluir
+              consultas que no corresponden al servicio.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-chart-simple"></i>
+
+              Seguimiento de resultados
+
+            </h3>
+
+            <p>
+
+              Revisamos indicadores de la campaña para detectar
+              qué elementos funcionan mejor y dónde existen
+              posibilidades de optimización.
+
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-service-card">
+
+            <h3>
+
+              <i class="fa-solid fa-arrows-rotate"></i>
+
+              Optimización
+
+            </h3>
+
+            <p>
+
+              Una campaña no debería quedar abandonada después
+              de configurarla. La optimización permite realizar
+              ajustes según la información disponible.
+
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         GOOGLE ADS LOCAL
+         ======================================================= -->
+
+    <section class="ads-section ads-local">
+
+      <div class="container">
+
+        <div class="ads-local-box">
+
+
+          <div
+            class="ads-local-content"
+            data-aos="fade-right">
+
+            <span class="ads-section-label">
+              Estrategia local
+            </span>
+
+
+            <h2>
+
+              Google Ads pensado para
+              <span>Ezeiza.</span>
+
+            </h2>
+
+
+            <p>
+
+              Si tu negocio trabaja principalmente con clientes
+              de Ezeiza y localidades cercanas, no necesariamente
+              necesitás mostrar tus anuncios indiscriminadamente
+              en todo el país.
+
+            </p>
+
+
+            <p>
+
+              La estrategia puede plantearse alrededor de la zona
+              donde realmente prestás tus servicios o recibís
+              clientes.
+
+            </p>
+
+
+            <ul class="ads-local-list">
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Ezeiza
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Canning
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Monte Grande
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Tristán Suárez
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Carlos Spegazzini
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+          <div
+            class="ads-radius"
+            data-aos="fade-left">
+
+            <div class="ads-radius-circle one"></div>
+
+            <div class="ads-radius-circle two"></div>
+
+            <div class="ads-radius-circle three"></div>
+
+            <div class="ads-radius-center">
+
+              <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+            <span class="ads-radius-label">
+              Zona de orientación publicitaria
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         PROCESO
+         ======================================================= -->
+
+    <section
+      class="ads-section"
+      id="como-trabajamos">
+
+      <div class="container">
+
+        <div class="ads-section-header">
+
+          <span class="ads-section-label">
+            Nuestro proceso
+          </span>
+
+          <h2 class="ads-section-title">
+            De la estrategia a la campaña.
+          </h2>
+
+          <p class="ads-section-description">
+
+            Trabajamos cada etapa para que la campaña tenga una
+            estructura coherente antes de comenzar a invertir.
+
+          </p>
+
+        </div>
+
+
+        <div class="ads-process-grid">
+
+
+          <article class="ads-process-card">
+
+            <div class="ads-process-number">
+              01
+            </div>
+
+            <h3>
+              Analizamos
+            </h3>
+
+            <p>
+              Conocemos el negocio, sus servicios, zona y objetivos.
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-process-card">
+
+            <div class="ads-process-number">
+              02
+            </div>
+
+            <h3>
+              Planificamos
+            </h3>
+
+            <p>
+              Definimos búsquedas, estructura, anuncios y orientación.
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-process-card">
+
+            <div class="ads-process-number">
+              03
+            </div>
+
+            <h3>
+              Configuramos
+            </h3>
+
+            <p>
+              Implementamos la campaña y sus diferentes elementos.
+            </p>
+
+          </article>
+
+
+
+          <article class="ads-process-card">
+
+            <div class="ads-process-number">
+              04
+            </div>
+
+            <h3>
+              Optimizamos
+            </h3>
+
+            <p>
+              Revisamos información y realizamos ajustes cuando corresponde.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         SERVICIOS RELACIONADOS
+         ======================================================= -->
+
+    <section class="ads-section">
+
+      <div class="container">
+
+        <div class="ads-section-header">
+
+          <span class="ads-section-label">
+            Estrategia digital
+          </span>
+
+          <h2 class="ads-section-title">
+            Google Ads funciona todavía mejor cuando tu presencia digital acompaña.
+          </h2>
+
+          <p class="ads-section-description">
+
+            El anuncio puede conseguir la visita, pero la página
+            tiene que ayudar a convertir esa visita en una consulta.
+
+          </p>
+
+        </div>
+
+
+        <div class="ads-links-grid">
+
+
+          <a
+            href="diseno-web-ezeiza.html"
+            class="ads-link-card">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>
+              Diseño web en Ezeiza
+            </h3>
+
+            <p>
+
+              Un sitio profesional puede funcionar como destino
+              de tus campañas y presentar claramente tus servicios.
+
+            </p>
+
+            <span class="ads-link-more">
+              Conocer diseño web →
+            </span>
+
+          </a>
+
+
+
+          <a
+            href="landing-page-ezeiza.html"
+            class="ads-link-card">
+
+            <i class="fa-solid fa-window-maximize"></i>
+
+            <h3>
+              Landing Pages en Ezeiza
+            </h3>
+
+            <p>
+
+              Una página enfocada en un servicio concreto puede
+              ayudar a concentrar la atención del visitante.
+
+            </p>
+
+            <span class="ads-link-more">
+              Ver Landing Pages →
+            </span>
+
+          </a>
+
+
+
+          <a
+            href="seo-local-ezeiza.html"
+            class="ads-link-card">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <h3>
+              SEO Local en Ezeiza
+            </h3>
+
+            <p>
+
+              Complementá la publicidad paga con una estrategia
+              orientada a mejorar la presencia orgánica local.
+
+            </p>
+
+            <span class="ads-link-more">
+              Conocer SEO Local →
+            </span>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         FAQ
+         ======================================================= -->
+
+    <section class="ads-section">
+
+      <div class="container">
+
+        <div class="ads-section-header">
+
+          <span class="ads-section-label">
+            Preguntas frecuentes
+          </span>
+
+          <h2 class="ads-section-title">
+            Algunas preguntas sobre Google Ads.
+          </h2>
+
+        </div>
+
+
+        <div class="ads-faq">
+
+
+          <details>
+
+            <summary>
+              ¿Se puede hacer publicidad en Google solamente en Ezeiza?
+            </summary>
+
+            <div class="ads-faq-answer">
+
+              Sí. Las campañas pueden configurarse para orientar
+              la publicidad hacia una zona geográfica determinada,
+              de acuerdo con los objetivos y el alcance del negocio.
+
+            </div>
+
+          </details>
+
+
+
+          <details>
+
+            <summary>
+              ¿Google Ads garantiza conseguir clientes?
+            </summary>
+
+            <div class="ads-faq-answer">
+
+              No existe una garantía de cantidad de clientes.
+              Los resultados dependen de factores como la demanda,
+              competencia, inversión, oferta, anuncios y página
+              de destino. El objetivo es trabajar y optimizar
+              campañas orientadas a generar consultas relevantes.
+
+            </div>
+
+          </details>
+
+
+
+          <details>
+
+            <summary>
+              ¿Cuánto hay que invertir en Google Ads?
+            </summary>
+
+            <div class="ads-faq-answer">
+
+              La inversión depende del mercado, competencia,
+              zona y objetivos del negocio. El presupuesto puede
+              plantearse de acuerdo con las posibilidades del
+              cliente y analizarse posteriormente con los datos
+              obtenidos por la campaña.
+
+            </div>
+
+          </details>
+
+
+
+          <details>
+
+            <summary>
+              ¿Google Ads sirve para un negocio local?
+            </summary>
+
+            <div class="ads-faq-answer">
+
+              Sí. Puede resultar útil cuando las personas realizan
+              búsquedas relacionadas con productos o servicios que
+              ofrece un negocio local.
+
+            </div>
+
+          </details>
+
+
+
+          <details>
+
+            <summary>
+              ¿Google Ads y SEO Local son lo mismo?
+            </summary>
+
+            <div class="ads-faq-answer">
+
+              No. Google Ads utiliza publicidad paga para obtener
+              presencia en determinadas búsquedas, mientras que
+              el SEO busca mejorar el posicionamiento orgánico.
+              Ambas estrategias pueden complementarse.
+
+            </div>
+
+          </details>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         CTA FINAL
+         ======================================================= -->
+
+    <section class="ads-final-cta">
+
+      <div class="container">
+
+        <div class="ads-cta-box">
+
+          <h2>
+
+            ¿Querés que tu negocio aparezca cuando
+            <span>te están buscando?</span>
+
+          </h2>
+
+
+          <p>
+
+            Contame qué servicio ofrecés, dónde trabajás y qué
+            querés conseguir. Podemos analizar una estrategia de
+            Google Ads orientada a tu negocio.
+
+          </p>
+
+
+          <a
+            href="https://wa.me/5491139378426?text=Hola%20MMartinez%20Solution%20IT%2C%20quiero%20consultar%20por%20Google%20Ads%20en%20Ezeiza."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Consultar por Google Ads
+
+          </a>
+
+
+          <span class="ads-cta-note">
+            Sin compromiso · Analizamos tu caso
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+
+            <div class="logo-icon">
+
+              <img
+                src="./img-principal/logo-web.webp"
+                alt="MMartinez Solution IT"
+                width="42"
+                height="42">
+
+            </div>
+
+            <div class="logo-text">
+
+              <span class="logo-name">
+                MMARTINEZ
+              </span>
+
+              <span class="logo-sub">
+                SOLUTION IT
+              </span>
+
+            </div>
+
+          </a>
+
+
+          <p>
+
+            Soluciones digitales para negocios y profesionales.
+            Diseño web, landing pages, SEO local y publicidad
+            online.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="footer-nav">
+
+          <h4>
+            SERVICIOS
+          </h4>
+
+          <div class="footer-nav-cols">
+
+            <div>
+
+              <a href="diseno-web-ezeiza.html">
+                Diseño Web
+              </a>
+
+              <a href="landing-page-ezeiza.html">
+                Landing Pages
+              </a>
+
+              <a href="seo-local-ezeiza.html">
+                SEO Local
+              </a>
+
+              <a href="google-ads-ezeiza.html">
+                Google Ads
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="footer-contact">
+
+          <h4>
+            CONTACTO
+          </h4>
+
+          <a
+            href="https://wa.me/5491139378426"
+            target="_blank"
+            rel="noopener">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            WhatsApp
+
+          </a>
+
+          <a href="mailto:maxteel1989@gmail.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            maxteel1989@gmail.com
+
+          </a>
+
+          <a href="index.html">
+
+            <i class="fa-solid fa-globe"></i>
+
+            mmartinezsolutionit.com.ar
+
+          </a>
+
+        </div>
+
+
+
+        <div class="footer-social">
+
+          <h4>
+            SEGUINOS
+          </h4>
+
+          <div class="social-icons">
+
+            <a
+              href="#"
+              class="social-icon"
+              aria-label="Facebook">
+
+              <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a
+              href="#"
+              class="social-icon"
+              aria-label="Instagram">
+
+              <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2021 - 2026 MMartinez Solution IT. Todos los derechos reservados.
+        </span>
+
+        <span>
+          Ezeiza · Buenos Aires · Argentina
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       WHATSAPP FLOAT
+       ========================================================= -->
+
+  <a
+    href="https://wa.me/5491139378426?text=Hola%20MMartinez%20Solution%20IT%2C%20quiero%20consultar%20por%20Google%20Ads%20en%20Ezeiza."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+  </a>
+
+
+
+  <!-- =========================================================
+       MOBILE BOTTOM NAV
+       ========================================================= -->
+
+  <nav
+    class="mobile-bottom-nav"
+    aria-label="Navegación móvil inferior">
+
+    <a
+      href="index.html"
+      class="mob-nav-item">
+
+      <i class="fa-solid fa-house"></i>
+
+      <span>
+        Inicio
+      </span>
+
+    </a>
+
+
+    <a
+      href="diseno-web-ezeiza.html"
+      class="mob-nav-item">
+
+      <i class="fa-solid fa-laptop-code"></i>
+
+      <span>
+        Web
+      </span>
+
+    </a>
+
+
+    <a
+      href="https://wa.me/5491139378426?text=Hola%20MMartinez%20Solution%20IT%2C%20quiero%20consultar."
+      class="mob-nav-item mob-nav-wa"
+      target="_blank"
+      rel="noopener">
+
+      <span class="mob-wa-circle">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+      </span>
+
+      <span>
+        WhatsApp
+      </span>
+
+    </a>
+
+
+    <a
+      href="seo-local-ezeiza.html"
+      class="mob-nav-item">
+
+      <i class="fa-solid fa-location-dot"></i>
+
+      <span>
+        SEO
+      </span>
+
+    </a>
+
+
+    <a
+      href="google-ads-ezeiza.html"
+      class="mob-nav-item active">
+
+      <i class="fa-brands fa-google"></i>
+
+      <span>
+        Ads
+      </span>
+
+    </a>
+
+  </nav>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT DE LA PLANTILLA MADRE
+       ========================================================= -->
+
+  <script src="app.js"></script>
+
+
+  <!-- =========================================================
+       FALLBACK AOS
+       Si tu script.js ya maneja [data-aos], esto no molesta.
+       ========================================================= -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const animatedElements =
+        document.querySelectorAll("[data-aos]");
+
+      if (!animatedElements.length) return;
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+
+          entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("aos-animate");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+      animatedElements.forEach(function (element) {
+
+        observer.observe(element);
+
+      });
+
+    });
+
+
+    /* =========================================================
+       HAMBURGER MOBILE
+       ========================================================= */
+
+    const hamburger =
+      document.querySelector(".hamburger");
+
+    const mobileMenu =
+      document.querySelector(".mobile-menu");
+
+
+    if (hamburger && mobileMenu) {
+
+      hamburger.addEventListener("click", function () {
+
+        const isOpen =
+          mobileMenu.classList.toggle("open");
+
+        hamburger.setAttribute(
+          "aria-expanded",
+          isOpen
+        );
+
+        hamburger.innerHTML = isOpen
+          ? '<i class="fa-solid fa-xmark"></i>'
+          : '<i class="fa-solid fa-bars"></i>';
+
+      });
+
+
+      document
+        .querySelectorAll(".mobile-nav-link")
+        .forEach(function (link) {
+
+          link.addEventListener("click", function () {
+
+            mobileMenu.classList.remove("open");
+
+            hamburger.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+            hamburger.innerHTML =
+              '<i class="fa-solid fa-bars"></i>';
+
+          });
+
+        });
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
