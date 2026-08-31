@@ -476,7 +476,7 @@
   }
   .device--tablet .device__content h5 {
    
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
     margin-bottom: 8px;
@@ -697,7 +697,7 @@
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 0;
+    padding: 18px 0;
     scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
   }
   
@@ -721,7 +721,9 @@
     transform: translateY(-5px);
     border-color: #e6edea;
     box-shadow: 0 10px 20px rgba(181, 195, 188, 0.1);
+   
   }
+ .slider-card__link:hover{background-color:var(--green-500);}
   
   .card-image-placeholder {
     width: 100%;
@@ -1248,6 +1250,7 @@
   cursor: pointer;
  color: var(--cyan-300);
 }
+.slider-card__link ::hover{background-color: #1d4ed8;}
   }
 
   
