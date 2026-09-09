@@ -93,7 +93,7 @@
   });
 })();
 
-/* ===== MOBILE MENU ===== */
+/* ===== MOBILE MENU ===== 
 (function () {
   const btn  = document.getElementById('hamburger');
   const menu = document.getElementById('mobile-menu');
@@ -109,7 +109,140 @@
       btn.querySelector('i').className = 'fa-solid fa-bars';
     });
   });
-})();
+})();*/
+/* =========================================================
+   MOBILE MENU
+   Controla el menú hamburguesa y el submenú de Servicios.
+   ========================================================= */
+
+   (function () {
+
+    const btn = document.getElementById('hamburger');
+    const menu = document.getElementById('mobile-menu');
+  
+    /* Si alguno de los elementos no existe, no ejecutamos nada */
+  
+    if (!btn || !menu) return;
+  
+  
+    /* =======================================================
+       MENÚ HAMBURGUESA PRINCIPAL
+       ======================================================= */
+  
+    btn.addEventListener('click', () => {
+  
+      menu.classList.toggle('open');
+  
+      const isOpen = menu.classList.contains('open');
+  
+      btn.querySelector('i').className = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars';
+  
+      /* Accesibilidad */
+  
+      btn.setAttribute('aria-label',
+        isOpen
+          ? 'Cerrar menú principal'
+          : 'Abrir menú principal'
+      );
+  
+    });
+  
+  
+    /* =======================================================
+       DROPDOWN SERVICIOS - MOBILE
+       ======================================================= */
+  
+    const services = menu.querySelector('.mobile-services');
+    const servicesTrigger = menu.querySelector('.mobile-services__trigger');
+  
+    if (services && servicesTrigger) {
+  
+      servicesTrigger.addEventListener('click', (e) => {
+  
+        e.preventDefault();
+        e.stopPropagation();
+  
+        services.classList.toggle('open');
+  
+        const isServicesOpen =
+          services.classList.contains('open');
+  
+        servicesTrigger.setAttribute(
+          'aria-expanded',
+          isServicesOpen
+        );
+  
+      });
+  
+    }
+  
+  
+    /* =======================================================
+       CERRAR MENÚ AL ELEGIR UNA SECCIÓN
+       
+       IMPORTANTE:
+       No incluimos los enlaces del dropdown de Servicios,
+       porque esos "#" serán reemplazados posteriormente.
+       ======================================================= */
+  
+    menu.querySelectorAll(
+      '.mobile-nav-link'
+    ).forEach(link => {
+  
+      link.addEventListener('click', () => {
+  
+        menu.classList.remove('open');
+  
+        btn.querySelector('i').className =
+          'fa-solid fa-bars';
+  
+        btn.setAttribute(
+          'aria-label',
+          'Abrir menú principal'
+        );
+  
+      });
+  
+    });
+  
+  
+    /* =======================================================
+       CERRAR MENÚ AL ELEGIR UN SERVICIO
+       
+       Cuando posteriormente reemplaces "#" por las URLs
+       reales, el menú también se cerrará correctamente.
+       ======================================================= */
+  
+    menu.querySelectorAll(
+      '.mobile-services__item'
+    ).forEach(link => {
+  
+      link.addEventListener('click', () => {
+  
+        menu.classList.remove('open');
+  
+        services.classList.remove('open');
+  
+        servicesTrigger.setAttribute(
+          'aria-expanded',
+          'false'
+        );
+  
+        btn.querySelector('i').className =
+          'fa-solid fa-bars';
+  
+        btn.setAttribute(
+          'aria-label',
+          'Abrir menú principal'
+        );
+  
+      });
+  
+    });
+  
+  })();
 
 /* ===== SMOOTH SCROLL ===== */
 document.querySelectorAll('a[href^="#"]').forEach(a => {

@@ -179,7 +179,7 @@
   .hero__grid {
     position: absolute;
     inset: 0;
-    background-image:
+    background-image: 
       linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
       linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
     background-size: 60px 60px;
@@ -315,7 +315,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("./img/mmartinez-logo.webp");
+    background-image: url("/img-principal/logo-web.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Rellena la pantalla de la PC */
@@ -476,7 +476,7 @@
   }
   .device--tablet .device__content h5 {
    
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
     margin-bottom: 8px;
@@ -488,11 +488,11 @@
  
 .device__base__parrafo, p {
   text-align: center;
-font-size: 16px;
+  font-size: 200px;
   color:white;
   padding-top: 15px;
 }
-.device__base__landing, a {
+.device__base__landing {
   cursor: pointer;
  color: var(--cyan-300);
 }
@@ -697,7 +697,7 @@ font-size: 16px;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 0;
+    padding: 18px 0;
     scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
   }
   
@@ -721,7 +721,9 @@ font-size: 16px;
     transform: translateY(-5px);
     border-color: #e6edea;
     box-shadow: 0 10px 20px rgba(181, 195, 188, 0.1);
+   
   }
+ .slider-card__link:hover{background-color:var(--green-500);}
   
   .card-image-placeholder {
     width: 100%;
@@ -1248,6 +1250,7 @@ font-size: 16px;
   cursor: pointer;
  color: var(--cyan-300);
 }
+.slider-card__link ::hover{background-color: #1d4ed8;}
   }
 
   
