@@ -3879,3 +3879,79 @@ img { display: block; max-width: 100%; }
   }
 
 }
+/* ========================================== */
+/* ESTILOS DEL BANNER FLOTANTE DE COOKIES     */
+/* ========================================== */
+.cookie-banner-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #161a22; /* Gris oscuro idéntico a tus bloques de sección */
+  border: 1px solid #242b35; /* Borde sutil a tono */
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 9999; /* Se asegura de flotar por encima de cualquier otro elemento */
+  width: 90%;
+  max-width: 600px;
+  display: none; /* Controlado por JavaScript para que no parpadee al cargar */
+}
+
+.cookie-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cookie-content p {
+  color: #cbd5e1; /* Gris claro para lectura legible */
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cookie-content a {
+  color: #0070f3; /* Tu azul corporativo para resaltar el enlace legal */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cookie-content a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de cierre */
+.cookie-btn {
+  background-color: #0070f3; /* Fondo azul de acento */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.cookie-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Adaptación para pantallas de celulares */
+@media (max-width: 600px) {
+  .cookie-banner-box {
+      bottom: 10px;
+      padding: 15px;
+  }
+  .cookie-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .cookie-btn {
+      width: 100%;
+  }
+}
+

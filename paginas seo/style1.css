@@ -486,10 +486,10 @@
  /****enlaces internos*****/
 
  
-.device__base__parrafo, p {
+ .device__base__parrafo {
   text-align: center;
-  font-size: 200px;
-  color:white;
+  font-size: 16px;
+  color: white;
   padding-top: 15px;
 }
 .device__base__landing {

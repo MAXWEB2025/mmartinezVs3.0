@@ -1528,6 +1528,49 @@ rel="noopener noreferrer">  VER PROYECTO</a>
       <span>CONTACTO</span>
     </a>
   </nav>
+    <!-- ... Todo el contenido anterior de tu landing page ... -->
+
+    <!-- ========================================== -->
+    <!-- BANNER FLOTANTE DE PRIVACIDAD Y COOKIES   -->
+    <!-- ========================================== -->
+    <div id="cookie-banner" class="cookie-banner-box">
+      <div class="cookie-content">
+          <p>
+              Utilizamos cookies propias y de terceros para mejorar tu experiencia y analizar el tráfico. 
+              Al continuar navegando, aceptas nuestras <a href="politica-privacidad.html" target="_blank">Políticas de Privacidad y Términos</a>.
+          </p>
+          <button id="accept-cookie-btn" class="cookie-btn">Entendido / Cerrar</button>
+      </div>
+  </div>
+
+</body>
+</html>
+<!-- SCRIPT DE LOGICA PARA EL CIERRE (CORREGIDO) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const banner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookie-btn");
+
+      // Verificación de seguridad por si cambiaste algún ID en el HTML
+      if (!banner || !acceptBtn) {
+          console.warn("Faltan elementos en el HTML para activar el banner.");
+          return;
+      }
+
+      // Comprueba si el usuario ya presionó "Cerrar" en sesiones anteriores
+      if (!localStorage.getItem("cookiesAceptadas")) {
+          banner.style.display = "block"; // Muestra el cartel si es su primera visita
+      } else {
+          banner.style.display = "none";  // Se asegura de mantenerlo oculto
+      }
+
+      // Oculta el cartel y guarda la preferencia al hacer clic en el botón
+      acceptBtn.addEventListener("click", function () {
+          banner.style.display = "none";
+          localStorage.setItem("cookiesAceptadas", "true"); // Guarda el registro definitivo
+      });
+  });
+</script>
 
   <script src="app.js" defer></script>
 </body>
